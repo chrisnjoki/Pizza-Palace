@@ -7,3 +7,11 @@ function Getpizza(name,size,crust,topping,total){
     this.topping = topping;
     this.total = total;
 }
+// proceed buutton
+$(document).ready(function(){
+    $("button.proceed").click(function(){
+        $("button.proceed").hide();
+        $("#").hide();
+        $("")
+    })
+})

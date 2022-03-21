@@ -9,10 +9,13 @@
 .contaner1{
     border: 0;
     margin: 0;
+
 }
 
 .contaioner2,img{
     width: auto;
+    height: auto;
+    align-items: center;
 }
 .contaioner2{
     text-align: center;
@@ -28,4 +31,10 @@ h2{
 
 .container3{
     align-items: center;
+}
+
+.container5{
+    background-color: tomato;
+    width: auto;
+    height: auto;
 }

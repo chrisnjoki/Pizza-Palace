@@ -74,12 +74,55 @@
       </div>
 
       <div class="container" id="make-order">
-          <h2>Order Here</h2>
+          <h2>Order Here:</h2>
           <h3>We also deliver pizza to desired destination</h3>
-          <div class="col-sm-5">
-              <form action="#">
-                  <label for="select">Select your flavour</label>
-              </form>
+          <div class="row">
+            <div class="col-sm-5">
+                <form action="#">
+                    <label for="select">Select your flavour</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <option value="Chicken Tika">Chicken Tika Pizza</option>
+                        <option value="Peri Peri Pizza">Peri Peri Pizza</option>
+                        <option value="Desert Pizza">Desert Pizza</option>
+                        <option value="Chicken Barbeque">Chicken Barbeque</option>
+                        <option value="Beef Barbeque">Beef Barbeque</option>
+                    </select>
+
+                    <label for="select">Select size</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <option value="large">Large -- ksh. 1200</option>
+                        <option value="medium">Medium -- ksh. 850</option>
+                        <option value="small">Small -- ksh. 600</option>
+                    </select>
+
+                    <label for="crust">Choose your favourite crust</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <option value="crispy">Crispy</option>
+                        <option value="stuffed">Stuffed</option>
+                        <option value="gluten-free">Gluten-Free</option>
+                    </select>
+
+                    <label for="topings">Select your desired topings</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <input type="checkbox" id="sausage" value="sausage" name="topings">
+                        <label for="sausage">Sausage</label>
+                    </select>
+                    
+                    <label for="topings">Select your desired topings</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <input type="checkbox" id="bacon" value="bacon" name="topings">
+                        <label for="sausage">Bacon</label>
+                    </select>
+
+                    <label for="topings">Select your desired topings</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                        <input type="checkbox" id="sausage" value="sausage" name="topings">
+                        <label for="sausage">Sausage</label>
+                    </select>
+
+
+                </form>
+            </div>
           </div>
       </div>
 

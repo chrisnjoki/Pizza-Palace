@@ -41,7 +41,7 @@ $(document).ready(function(){
         let crustPrice= parseInt($("#crust option:selected").val());
         let toppingPrice= parseInt($("#topping option:selected").val());
         let total = sizePrice + crustPrice + toppingPrice;
-        let finalPrice = total;
+        let finalPrice =total;
 
         let newOrder = new Order(pizzaName, pizzasize, pizzacrust, pizzatopping, total);
 
@@ -51,8 +51,11 @@ $(document).ready(function(){
 
         console.log(finalPrice);
 
-
       });
+
+      // $(".checkout").click(function(){
+      //   $(".finalPrice").html(finalPrice);
+      // });
 
     });
 });

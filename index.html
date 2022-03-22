@@ -5,14 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cormorant|Eczar|El+Messiri|Itim|Sancreek|Wallpoet&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/mdb.min.css">
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="css/wickedcss.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai|Cormorant|Eczar|El+Messiri|Itim|Sancreek|Wallpoet&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./script.js"></script>
   <br>
     <title>Pizza Palace</title>
 </head>
@@ -91,7 +89,7 @@
             <div class="col-sm-5">
                 <form action="#">
                     <label for="select">Select your flavour</label>
-                    <select class="browser-default custom-select custom-select-md mb-3 name">
+                    <select class="browser-default custom-select custom-select-md mb-3 name" id="name">  
                         <option value="Chicken Tika">Chicken Tika Pizza</option>
                         <option value="Peri Peri Pizza">Peri Peri Pizza</option>
                         <option value="Desert Pizza">Desert Pizza</option>
@@ -100,44 +98,34 @@
                     </select>
 
                     <label for="select">Select size</label>
-                    <select class="browser-default custom-select custom-select-md mb-3 name">
-                        <option value="large">Large -- ksh. 1200</option>
-                        <option value="medium">Medium -- ksh. 850</option>
-                        <option value="small">Small -- ksh. 600</option>
+                    <select class="browser-default custom-select custom-select-md mb-3 name" id="size">
+                        <option value="1200">Large -- ksh. 1200</option>
+                        <option value="850">Medium -- ksh. 850</option>
+                        <option value="600">Small -- ksh. 600</option>
                     </select>
 
                     <label for="crust">Choose your favourite crust</label>
-                    <select class="browser-default custom-select custom-select-md mb-3 name">
-                        <option value="crispy">Crispy</option>
-                        <option value="stuffed">Stuffed</option>
-                        <option value="gluten-free">Gluten-Free</option>
+                    <select class="browser-default custom-select custom-select-md mb-3 name" id="crust">
+                        <option value="120">Crispy</option>
+                        <option value="100">Stuffed</option>
+                        <option value="110">Gluten-Free</option>
                     </select>
 
-                    <label for="topings">Select your desired topings:</label> <br>
-                    <!-- <select class="browser-default custom-select custom-select-md mb-3 name"> -->
-                        <input type="checkbox" id="sausage" value="sausage" name="topings">
-                        <label for="sausage">Sausage</label>
-                    </select>
-                    
-                    <!-- <label for="topings"></label>
-                    <select class="browser-default custom-select custom-select-md mb-3 name"> -->
-                        <input type="checkbox" id="bacon" value="bacon" name="topings">
-                        <label for="sausage">Bacon</label>
-                    </select>
-
-                    <!-- <label for="topings"></label>
-                    <select class="browser-default custom-select custom-select-md mb-3 name"> -->
-                        <input type="checkbox" id="mushrooms" value="mushrooms" name="topings">
-                        <label for="sausage">Mushrooms</label>
+                    <label for="crust">Choose your toppings</label>
+                    <select class="browser-default custom-select custom-select-md mb-3 name" id="topping">
+                        <option value="50">Sausage</option>
+                        <option value="50">Bacon</option>
+                        <option value="50">Mushroom</option>
                     </select>
                     <br>
-                    <button type="submit" class="orange">Proceed</button>
+                    <button type="button" class="proceed">Proceed</button>
                 </form>
             </div>
           </div>
       </div>
       <br>
-      <!-- <div class="container5">
+      
+      <div class="container5">
           <div id="information">
               <p> <b>Your order will be processed and delivered within one hour of placing. <br>
                   Incase of any delay, reach out to us immediately. </b>
@@ -170,7 +158,7 @@
                       <p id="finalmessage"></p>
                   </div>
               </div>
-          </div> -->
+          </div>
       </div>
 
 </body>

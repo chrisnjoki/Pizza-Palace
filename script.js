@@ -53,9 +53,9 @@ $(document).ready(function(){
 
       });
 
-      // $(".checkout").click(function(){
-      //   $(".finalPrice").html(finalPrice);
-      // });
+      $(".checkout").click(function(){
+        $(".finalPrice").html(finalPrice);
+      });
 
     });
 });
